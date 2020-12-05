@@ -130,11 +130,11 @@ public class ArraySlice extends Slice {
         }
     }
 
-    /*
-    @Override
-    public Reader Reader() {
+    
+    
+    public ArrayReader ArrayReader() {
         return new ArrayReader(arr, (int) sliceStartPos, (int) sliceLength);
-    }*/
+    }
 
     @Override
     public boolean equals(final Object o) {

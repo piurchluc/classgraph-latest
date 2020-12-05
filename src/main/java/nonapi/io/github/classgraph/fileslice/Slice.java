@@ -40,7 +40,7 @@ import java.util.zip.Inflater;
 
 import nonapi.io.github.classgraph.fastzipfilereader.NestedJarHandler;
 import nonapi.io.github.classgraph.fileslice.reader.ClassfileReader;
-
+import nonapi.io.github.classgraph.fileslice.reader.FileChannelReader;
 import nonapi.io.github.classgraph.utils.FileUtils;
 
 /**
@@ -231,6 +231,8 @@ public abstract class Slice implements Closeable {
     
 
     public abstract Reader Reader();
+    public abstract FileChannelReader FileChannelReader();
+    
 
 	/**
      * Open this {@link Slice} for buffered sequential reading. Make sure you close this when you have finished with

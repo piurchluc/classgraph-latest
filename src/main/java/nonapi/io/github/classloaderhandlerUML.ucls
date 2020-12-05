@@ -1,411 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="nonapi.io.github.classgraph.classloaderhandler.AntClassLoaderHandler" 
+  <class id="1" language="java" name="nonapi.io.github.classgraph.fileslice.reader.ByteBufferReader" 
     project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/AntClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="3802" y="1267"/>    
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/reader/ByteBufferReader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1216" y="1359"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="2" language="java" name="nonapi.io.github.classgraph.classloaderhandler.ClassLoaderHandler" 
+  <class id="2" language="java" name="nonapi.io.github.classgraph.fileslice.reader.ArrayReader" project="ClassGraph" 
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/reader/ArrayReader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="843" y="1349"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="nonapi.io.github.classgraph.fileslice.reader.ClassfileReader" project="ClassGraph" 
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/reader/ClassfileReader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="477" y="746"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="nonapi.io.github.classgraph.fileslice.reader.FileChannelReader" 
     project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/ClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="6847" y="1052"/>    
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/reader/FileChannelReader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1620" y="1401"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="nonapi.io.github.classgraph.fileslice.reader.SequentialReader" 
+    project="ClassGraph" 
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/reader/SequentialReader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="173" y="274"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="3" language="java" name="nonapi.io.github.classgraph.classloaderhandler.ClassLoaderHandlerRegistry" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/ClassLoaderHandlerRegistry.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="6460" y="1541"/>    
+  <class id="6" language="java" name="nonapi.io.github.classgraph.fileslice.ArraySlice" project="ClassGraph" 
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/ArraySlice.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1026" y="798"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" 
-    name="nonapi.io.github.classgraph.classloaderhandler.ClassLoaderHandlerRegistry.ClassLoaderHandlerRegistryEntry" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/ClassLoaderHandlerRegistry.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="6393" y="771"/>    
+  <class id="7" language="java" name="nonapi.io.github.classgraph.fileslice.FileSlice" project="ClassGraph" 
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/FileSlice.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1412" y="894"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="nonapi.io.github.classgraph.classloaderhandler.EquinoxClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/EquinoxClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="3377" y="1300"/>    
+  <class id="8" language="java" name="nonapi.io.github.classgraph.fileslice.PathSlice" project="ClassGraph" 
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/PathSlice.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1834" y="878"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" 
-    name="nonapi.io.github.classgraph.classloaderhandler.EquinoxContextFinderClassLoaderHandler" project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/EquinoxContextFinderClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="4200" y="1267"/>    
+  <class id="9" language="java" name="nonapi.io.github.classgraph.fileslice.Reader" project="ClassGraph" 
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/Reader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="794" y="292"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="nonapi.io.github.classgraph.classloaderhandler.FallbackClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/FallbackClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="4594" y="1266"/>    
+  <class id="10" language="java" name="nonapi.io.github.classgraph.fileslice.Slice" project="ClassGraph" 
+    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/fileslice/Slice.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1279" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="nonapi.io.github.classgraph.classloaderhandler.FelixClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/FelixClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="5014" y="1286"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="9" language="java" name="nonapi.io.github.classgraph.classloaderhandler.JBossClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/JBossClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="2852" y="1283"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="10" language="java" name="nonapi.io.github.classgraph.classloaderhandler.URLClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/URLClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="5436" y="1275"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="11" language="java" 
-    name="nonapi.io.github.classgraph.classloaderhandler.TomcatWebappClassLoaderBaseHandler" project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/TomcatWebappClassLoaderBaseHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="5864" y="1284"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="12" language="java" name="nonapi.io.github.classgraph.classloaderhandler.WeblogicClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/WeblogicClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="6292" y="1275"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="13" language="java" 
-    name="nonapi.io.github.classgraph.classloaderhandler.WebsphereTraditionalClassLoaderHandler" project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/WebsphereTraditionalClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="6720" y="1275"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="14" language="java" 
-    name="nonapi.io.github.classgraph.classloaderhandler.SpringBootRestartClassLoaderHandler" project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/SpringBootRestartClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="7148" y="1275"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="15" language="java" name="nonapi.io.github.classgraph.classloaderhandler.UnoOneJarClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/UnoOneJarClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="7576" y="1275"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="16" language="java" 
-    name="nonapi.io.github.classgraph.classloaderhandler.WebsphereLibertyClassLoaderHandler" project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/WebsphereLibertyClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="8004" y="1320"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="17" language="java" 
-    name="nonapi.io.github.classgraph.classloaderhandler.ParentLastDelegationOrderTestClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/ParentLastDelegationOrderTestClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="8422" y="1278"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="18" language="java" name="nonapi.io.github.classgraph.classloaderhandler.JPMSClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/JPMSClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="8850" y="1278"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="19" language="java" name="nonapi.io.github.classgraph.classloaderhandler.QuarkusClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/QuarkusClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="9335" y="1314"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="20" language="java" 
-    name="nonapi.io.github.classgraph.classloaderhandler.PlexusClassWorldsClassRealmClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/PlexusClassWorldsClassRealmClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="9820" y="1287"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="21" language="java" name="nonapi.io.github.classgraph.classloaderhandler.OSGiDefaultClassLoaderHandler" 
-    project="ClassGraph" 
-    file="/ClassGraph/src/main/java/nonapi/io/github/classgraph/classloaderhandler/OSGiDefaultClassLoaderHandler.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="10248" y="1278"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <realization id="22">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="23">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="13"/>  
-  </dependency>  
-  <dependency id="24">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="17"/>  
-  </dependency>  
-  <dependency id="25">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="21"/>  
-  </dependency>  
-  <realization id="26">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <realization id="27">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <realization id="28">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <realization id="29">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="30">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="19"/>  
-  </dependency>  
-  <realization id="31">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="32">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <dependency id="33">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="34">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="15"/>  
-  </dependency>  
-  <realization id="35">    
-    <end type="SOURCE" refId="18"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="36">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="37">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="16"/>  
-  </dependency>  
-  <dependency id="38">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="12"/>  
-  </dependency>  
-  <dependency id="39">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="20"/>  
-  </dependency>  
-  <realization id="40">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <realization id="41">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <realization id="42">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="43">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="14"/>  
-  </dependency>  
-  <dependency id="44">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <realization id="45">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <realization id="46">    
-    <end type="SOURCE" refId="16"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <nesting id="47">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
-  </nesting>  
-  <association id="48">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="49" name="CLASS_LOADER_HANDLERS"/>      
-      <multiplicity id="50" minimum="0" maximum="2147483647"/>    
+  <association id="11">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="12" name="parentSlice"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="51">    
+  <dependency id="14">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="15">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="16" name="reader"/>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="18">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <dependency id="19">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <generalization id="22">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="24">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="25">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="26">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <realization id="27">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <dependency id="28">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="29">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <dependency id="31">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="6"/>  
   </dependency>  
-  <dependency id="52">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="11"/>  
-  </dependency>  
-  <dependency id="53">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <realization id="54">    
-    <end type="SOURCE" refId="21"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="55">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <realization id="56">    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <association id="57">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="58" name="FALLBACK_HANDLER"/>      
-      <multiplicity id="59" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="60">    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <realization id="61">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <realization id="62">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <realization id="63">    
+  <dependency id="32">    
     <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="64">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <realization id="65">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="66">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="18"/>  
+    <end type="TARGET" refId="9"/>  
   </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
