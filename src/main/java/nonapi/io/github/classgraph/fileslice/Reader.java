@@ -33,15 +33,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /** Interface for random access to values in byte order. */
-public class Reader {
-    public Reader(FileChannel fileChannel, long sliceStartPos, long sliceLength) {
-		// TODO Auto-generated constructor stub
-	}
-
-	public Reader(ByteBuffer backingByteBuffer, long sliceStartPos, long sliceLength) {
-		// TODO Auto-generated constructor stub
-	}
-
+public interface Reader {
 	/**
      * Read bytes into a {@link ByteBuffer}.
      * 
@@ -57,9 +49,7 @@ public class Reader {
      * @throws IOException
      *             If there was an exception while reading.
      */
-    public int read(long srcOffset, ByteBuffer dstBuf, int dstBufStart, int numBytes) throws IOException {
-		return 0;
-	}
+    public int read(long srcOffset, ByteBuffer dstBuf, int dstBufStart, int numBytes) throws IOException;
 
     /**
      * Read bytes into a byte array.
@@ -76,9 +66,8 @@ public class Reader {
      * @throws IOException
      *             If there was an exception while reading.
      */
-    public static int read(long srcOffset, byte[] dstArr, int dstArrStart, int numBytes) throws IOException {
-		return 0;
-	}
+    public int read(long srcOffset, byte[] dstArr, int dstArrStart, int numBytes) throws IOException; 
+	
 
     /**
      * Read a byte at a specific offset (without changing the current cursor offset).
@@ -89,9 +78,7 @@ public class Reader {
      * @throws IOException
      *             If there was an exception while reading.
      */
-    public byte readByte(final long offset) throws IOException {
-		return 0;
-	}
+    public byte readByte(final long offset) throws IOException;
 
     /**
      * Read an unsigned byte at a specific offset (without changing the current cursor offset).
@@ -102,9 +89,7 @@ public class Reader {
      * @throws IOException
      *             If there was an exception while reading.
      */
-    public int readUnsignedByte(final long offset) throws IOException {
-		return 0;
-	}
+    public int readUnsignedByte(final long offset) throws IOException;
 
     /**
      * Read a short at a specific offset (without changing the current cursor offset).
@@ -115,9 +100,7 @@ public class Reader {
      * @throws IOException
      *             If there was an exception while reading.
      */
-    public short readShort(final long offset) throws IOException {
-		return 0;
-	}
+    public short readShort(final long offset) throws IOException;
 
     /**
      * Read a unsigned short at a specific offset (without changing the current cursor offset).
@@ -128,9 +111,7 @@ public class Reader {
      * @throws IOException
      *             If there was an exception while reading.
      */
-    public int readUnsignedShort(final long offset) throws IOException {
-		return 0;
-	}
+    public int readUnsignedShort(final long offset) throws IOException;
 
     /**
      * Read a int at a specific offset (without changing the current cursor offset).
@@ -141,9 +122,7 @@ public class Reader {
      * @throws IOException
      *             If there was an exception while reading.
      */
-    public int readInt(final long offset) throws IOException {
-		return 0;
-	}
+    public int readInt(final long offset) throws IOException;
 
     /**
      * Read a unsigned int at a specific offset (without changing the current cursor offset).
@@ -154,9 +133,7 @@ public class Reader {
      * @throws IOException
      *             If there was an exception while reading.
      */
-    public long readUnsignedInt(final long offset) throws IOException {
-		return 0;
-	}
+    public long readUnsignedInt(final long offset) throws IOException;
 
     /**
      * Read a long at a specific offset (without changing the current cursor offset).
@@ -167,9 +144,7 @@ public class Reader {
      * @throws IOException
      *             If there was an exception while reading.
      */
-    public long readLong(final long offset) throws IOException {
-		return 0;
-	}
+    public long readLong(final long offset) throws IOException;
 
     /**
      * Reads the "modified UTF8" format defined in the Java classfile spec, optionally replacing '/' with '.', and
@@ -188,9 +163,7 @@ public class Reader {
      *             If an I/O exception occurs.
      */
     public String readString(final long offset, final int numBytes, final boolean replaceSlashWithDot,
-            final boolean stripLSemicolon) throws IOException {
-		return null;
-	}
+            final boolean stripLSemicolon) throws IOException;
 
     /**
      * Reads the "modified UTF8" format defined in the Java classfile spec.
@@ -203,7 +176,5 @@ public class Reader {
      * @throws IOException
      *             If an I/O exception occurs.
      */
-    public String readString(final long offset, final int numBytes) throws IOException {
-		return null;
-	}
+    public String readString(final long offset, final int numBytes) throws IOException;
 }
