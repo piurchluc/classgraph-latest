@@ -46,7 +46,7 @@ import nonapi.io.github.classgraph.utils.FileUtils;
 import nonapi.io.github.classgraph.utils.StringUtils;
 
 
-public class ClassfileReader implements SequentialReader, Closeable {
+public class ClassfileReader implements Reader, SequentialReader, Closeable {
     /** If slice is deflated, a wrapper for {@link InflateInputStream}. */
     private InputStream inflaterInputStream;
 
