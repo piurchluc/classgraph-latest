@@ -38,7 +38,7 @@ import java.nio.channels.FileChannel;
 import nonapi.io.github.classgraph.utils.StringUtils;
 
 
-public class FileChannelReader {
+public class FileChannelReader implements ReaderInterface {
 
     /** The file channel. */
     private final FileChannel fileChannel;

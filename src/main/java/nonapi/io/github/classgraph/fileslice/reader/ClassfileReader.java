@@ -39,19 +39,17 @@ import java.nio.ReadOnlyBufferException;
 import java.util.Arrays;
 
 import nonapi.io.github.classgraph.fileslice.ArraySlice;
-import nonapi.io.github.classgraph.fileslice.FileSlice;
 import nonapi.io.github.classgraph.fileslice.Slice;
-import nonapi.io.github.classgraph.fileslice.Reader;
 import nonapi.io.github.classgraph.utils.FileUtils;
 import nonapi.io.github.classgraph.utils.StringUtils;
 
 
-public class ClassfileReader implements Reader, SequentialReader, Closeable {
+public class ClassfileReader implements ReaderInterface, SequentialReader, Closeable {
     /** If slice is deflated, a wrapper for {@link InflateInputStream}. */
     private InputStream inflaterInputStream;
 
     //
-    private Reader reader;
+    private ReaderInterface reader;
 
     /** Buffer. */
     private byte[] arr;
@@ -195,7 +193,7 @@ public class ClassfileReader implements Reader, SequentialReader, Closeable {
             // Don't read past end of slice
             final int bytesToRead = Math.min(maxBytesToRead, maxArrLen - arrUsed);
             // Read bytes from FileSlice into arr
-            final int numBytesRead = Reader.read(/* srcOffset = */ arrUsed, /* dstArr = */ arr,
+            final int numBytesRead = reader.read(/* srcOffset = */ arrUsed, /* dstArr = */ arr,
                     /* dstArrStart = */ arrUsed, /* numBytes = */ bytesToRead);
             if (numBytesRead > 0) {
                 arrUsed += numBytesRead;
