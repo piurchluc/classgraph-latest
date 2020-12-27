@@ -1,0 +1,5 @@
+/**
+ * ClassInDefaultPackage.
+ */
+public class ClassInDefaultPackage {
+}
